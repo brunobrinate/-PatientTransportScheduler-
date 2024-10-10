@@ -1,0 +1,20 @@
+{
+  "agendamentos": [
+    {
+      "id": "f908",
+      "nome": "RITA ",
+      "cpf": "12345678910",
+      "exame": "VISTA ",
+      "data": "2024-12-01",
+      "destino": "MANHUMIRIM "
+    },
+    {
+      "id": "fa59",
+      "nome": "ARTHUR ",
+      "cpf": "0198765432",
+      "exame": "VISTA",
+      "data": "2025-03-12",
+      "destino": "CARANGOLA "
+    }
+  ]
+}

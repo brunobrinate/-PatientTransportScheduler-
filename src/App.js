@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ViagensList from './components/viagensList';
+import AgendamentoForm from './components/agendamentosForm';
+import Confirmacao from './components/confirmationPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <h1>Sistema de Agendamento de Viagens</h1>
+        <Routes>
+          <Route path="/" element={<ViagensList />} />
+          <Route path="/agendar" element={<AgendamentoForm />} />
+          <Route path="/confirmacao" element={<Confirmacao />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
